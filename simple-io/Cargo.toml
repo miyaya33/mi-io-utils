@@ -10,7 +10,12 @@ readme = "../README.md"  # 复用根目录 README
 keywords = ["io", "file", "utility", "simple"]
 categories = ["filesystem", "development-tools"]
 
+[features]
+default = []
+password = ["dep:rpassword"]
+
 [dependencies]
+rpassword = { version = "7.3", optional = true }
 
 [lib]
 name = "mi_simple_io"  # Rust 库名（符合命名规范）
