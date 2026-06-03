@@ -1,20 +1,17 @@
 [package]
-name = "mi-simple-io"
-version.workspace = true
-edition.workspace = true
-authors.workspace = true
-license.workspace = true
-repository.workspace = true
-homepage.workspace = true
-documentation.workspace = true
+name = "mi-simple-io"  # 发布到 crates.io 的名称
+version = "0.1.0"
+edition = "2021"
 description = "Small synchronous IO utilities for common file and terminal workflows."
-readme = "../README.md"
-keywords = ["io", "file", "filesystem", "utility"]
-categories = ["filesystem", "command-line-utilities"]
-
-[features]
-default = []
-password = ["dep:rpassword"]
+authors = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+readme = "../README.md"  # 复用根目录 README
+keywords = ["io", "file", "utility", "simple"]
+categories = ["filesystem", "development-tools"]
 
 [dependencies]
-rpassword = { version = "7.4", optional = true }
+
+[lib]
+name = "mi_simple_io"  # Rust 库名（符合命名规范）
+path = "src/lib.rs"

@@ -1,6 +1,12 @@
-# my-io-utils
+# mi-io-utils
 
 Rust IO utility crates collected in one workspace.
+
+## Crates
+
+| Crate | Description | Version |
+|-------|-------------|---------|
+| [mi-simple-io](./simple-io) | Synchronous IO utilities | [![Crates.io](https://img.shields.io/crates/v/mi-simple-io.svg)](https://crates.io/crates/mi-simple-io) |
 
 ## Current Crate
 
