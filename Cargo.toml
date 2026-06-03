@@ -9,5 +9,5 @@ authors = ["mi"]
 license = "MIT"
 repository = "https://github.com/miyaya33/mi-io-utils"
 homepage = "https://github.com/miyaya33/mi-io-utils"
-documentation = "https://docs.rs/mi-simple-io"
 readme = "README.md"
+description = "A collection of practical IO utility libraries for Rust"
