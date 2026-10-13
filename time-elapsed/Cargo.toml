@@ -1,8 +1,8 @@
 [package]
 name = "mi-time-elapsed"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
-description = "An attribute macro that prints the execution time of async functions."
+description = "An attribute macro that prints the execution time of functions."
 authors = ["mi"]
 license = "MIT"
 repository = "https://github.com/miyaya33/mi-io-utils"

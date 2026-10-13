@@ -1,7 +1,6 @@
 # mi-time-elapsed
 
-An attribute macro that prints the wall-clock execution time of async
-functions.
+An attribute macro that prints the wall-clock execution time of functions.
 
 ## Usage
 
@@ -14,20 +13,21 @@ mi-time-elapsed = "0.1"
 use mi_time_elapsed::time_elapsed;
 
 #[time_elapsed]
-async fn load_user(id: u64) -> Result<String, &'static str> {
+fn load_user(id: u64) -> Result<String, &'static str> {
     Ok(format!("user-{id}"))
 }
 ```
 
-When the function completes, it prints the function signature and elapsed
-time. The macro uses `std::time::Instant` and has no dependency on Tokio,
-async-std, or any other async runtime.
+When the function completes, it prints the function name and elapsed time.
+It also prints when a function exits through an early `return`. Async
+functions are supported too; in that case the timing is printed when the
+future completes. The macro uses `std::time::Instant` and has no dependency
+on Tokio, async-std, or any other async runtime.
 
 ## Limitations
 
-- `#[time_elapsed]` only accepts async functions.
-- Timing is printed when the future completes. If the future is dropped before
-  completion, no timing line is printed.
+- If an async future is dropped before completion, its timing is printed at
+  drop time.
 
 ## License
 
