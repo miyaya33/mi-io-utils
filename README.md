@@ -7,6 +7,7 @@ Rust IO utility crates collected in one workspace.
 | Crate | Description | Version |
 |-------|-------------|---------|
 | [mi-simple-io](./simple-io) | Synchronous IO utilities | [![Crates.io](https://img.shields.io/crates/v/mi-simple-io.svg)](https://crates.io/crates/mi-simple-io) |
+| [mi-time-elapsed](./time-elapsed) | Async execution-time attribute macro | [![Crates.io](https://img.shields.io/crates/v/mi-time-elapsed.svg)](https://crates.io/crates/mi-time-elapsed) |
 
 ## Current Crate
 
@@ -31,11 +32,12 @@ fn main() -> std::io::Result<()> {
 ## Planned Crates
 
 - `simple-io/`: synchronous file, directory, temp file, input, and stats helpers.
+- `time-elapsed/`: an attribute macro for printing async function execution time.
 - `async-io/`: future async IO utilities.
 - `io-extras/`: future higher-level IO extensions.
 - `io-macros/`: future procedural macros if they become useful.
 
-Only `simple-io/` is currently implemented.
+`simple-io/` and `time-elapsed/` are currently implemented.
 
 ## Local Verification
 

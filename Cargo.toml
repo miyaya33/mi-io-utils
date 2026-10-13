@@ -1,5 +1,5 @@
 [workspace]
-members = ["simple-io"]
+members = ["simple-io", "time-elapsed"]
 resolver = "2"
 
 [workspace.package]

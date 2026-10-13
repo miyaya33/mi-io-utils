@@ -1,0 +1,24 @@
+[package]
+name = "mi-time-elapsed"
+version = "0.1.0"
+edition = "2021"
+description = "An attribute macro that prints the execution time of async functions."
+authors = ["mi"]
+license = "MIT"
+repository = "https://github.com/miyaya33/mi-io-utils"
+homepage = "https://github.com/miyaya33/mi-io-utils"
+readme = "README.md"
+documentation = "https://docs.rs/mi-time-elapsed"
+keywords = ["async", "timing", "benchmark", "macro", "performance"]
+categories = ["development-tools::procedural-macro-helpers", "asynchronous"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1"
+quote = "1"
+syn = { version = "2", features = ["full"] }
+
+[dev-dependencies]
+futures = "0.3"
