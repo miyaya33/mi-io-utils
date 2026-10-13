@@ -1,6 +1,6 @@
 [package]
 name = "mi-time-elapsed"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "An attribute macro that prints the execution time of functions."
 authors = ["mi"]
